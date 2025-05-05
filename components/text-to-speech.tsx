@@ -1,14 +1,14 @@
 "use client"
 
-import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
-import { Loader2, Download, Play } from "lucide-react"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Textarea } from "@/components/ui/textarea"
 import { generateSpeech, LanguageCode, VoiceName } from "@/lib/google-lll-tts"
-// These are placeholder data - replace with your actual supported languages and voices
+import { Download, Loader2, Play } from "lucide-react"
+import { useRef, useState } from "react"
+
 const languages = [
   { id: "en-US", name: "English (US)" },
   { id: "es-ES", name: "Spanish (Spain)" },
@@ -59,9 +59,6 @@ export default function TextToSpeech() {
 
   return (
     <Card className="w-full max-w-2xl mx-auto">
-      <CardHeader>
-        <CardTitle>Convert Text to Speech</CardTitle>
-      </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="text">Enter your text</Label>
@@ -142,6 +139,9 @@ export default function TextToSpeech() {
           </Button>
         )}
       </CardFooter>
+      <div className="text-center text-xs text-muted-foreground pb-3">
+        The API is powered by <a href="https://labs.google/lll/en" target="_blank" rel="noopener noreferrer">Little Language Lessons</a>.
+      </div>
     </Card>
   )
 }

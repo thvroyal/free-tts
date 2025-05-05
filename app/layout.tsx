@@ -28,6 +28,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <div className="text-center text-xs text-muted-foreground pb-3">
+          Created by <a href="https://github.com/thvroyal" target="_blank" rel="noopener noreferrer">@thvroyal</a>
+        </div>
       </body>
     </html>
   );
