@@ -13,9 +13,16 @@
 	},
 	"dependencies": {
 		"@opennextjs/cloudflare": "~1.0.0-beta.0 || ^1.0.0",
+		"@radix-ui/react-label": "^2.1.4",
+		"@radix-ui/react-select": "^2.2.2",
+		"@radix-ui/react-slot": "^1.2.0",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.507.0",
 		"next": "15.3.1",
 		"react": "^19.0.0",
-		"react-dom": "^19.0.0"
+		"react-dom": "^19.0.0",
+		"tailwind-merge": "^3.2.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250504.0",
@@ -27,6 +34,7 @@
 		"eslint": "^9",
 		"eslint-config-next": "15.3.1",
 		"tailwindcss": "^4",
+		"tw-animate-css": "^1.2.9",
 		"typescript": "^5",
 		"wrangler": "^4.14.1"
 	}
