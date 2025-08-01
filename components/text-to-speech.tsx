@@ -17,6 +17,7 @@ import { useRef, useState } from "react";
 
 const languages = [
   { id: "en-US", name: "English (US)" },
+  { id: "en-GB", name: "English (UK)" },
   { id: "vi-VN", name: "Vietnamese (Vietnam)" },
   { id: "es-ES", name: "Spanish (Spain)" },
   { id: "fr-FR", name: "French (France)" },
