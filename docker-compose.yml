@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  free-tts:
+    build: .
+    container_name: free-tts-app
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app # Mount for hot reloading in dev mode (remove for production)
+      - /app/node_modules # Avoid overwriting node_modules
+networks: {}
